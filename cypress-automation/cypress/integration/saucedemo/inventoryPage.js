@@ -32,7 +32,7 @@ describe('Saucedemo Inventory Page Test cases', () => {
   });
 
 
-  it('should take user to specific product page on product click- failing', () => {
+  it('should take user to specific product page on product click', () => {
 
     const productName = 'Sauce Labs Backpack';
     const productPrice = '$29.99';
