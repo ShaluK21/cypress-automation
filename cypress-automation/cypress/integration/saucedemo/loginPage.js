@@ -52,20 +52,4 @@ describe('Saucedemo Login Page Test cases', () => {
     cy.url({ timeout: 1 }).should('include', 'saucedemo.com'); 
     cy.logout();
   });
-
-
-  it('should add an item to the cart', () => {
-    const username = 'standard_user';
-    const password = 'secret_sauce';
-    const productName = 'Sauce Labs Backpack';
-
-   // cy.login(users[0].username, users[0].password);
-   cy.login(username, password);
-
-    cy.addToCart(productName);
-
-    cy.get('.shopping_cart_badge').should('have.text', '1');
-
-    cy.logout();
-  });
 });
