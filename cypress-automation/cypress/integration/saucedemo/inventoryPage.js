@@ -1,12 +1,6 @@
-// Test scenarios for saucedemo login page!
+// Test scenarios for saucedemo inventory page!
 
-before(() => {
-  // Actions to be performed before the entire test suite
-  // cy.visit('https://www.saucedemo.com');
-  //  cy.login('standard_user', 'secret_sauce');
-
-});
-describe('Saucedemo Login Page Test cases', () => {
+describe('Saucedemo Inventory Page Test cases', () => {
   beforeEach(() => {
     cy.visit('https://www.saucedemo.com');
     cy.login('standard_user', 'secret_sauce');
